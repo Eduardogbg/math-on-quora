@@ -43,7 +43,7 @@ a_n = 2 \cdot a_{n-1}
 Uma raiz quadrada pode ser formatada como
 \sqrt{16} = 4
 
-Para tirar a raiz [math]n-\text{ésima}[/math], use
+Para tirar a raiz [math]n[/math]-ésima, use
 \sqrt[3]{27} = 3
 
 `\pm` vira "mais-ou-menos".
@@ -80,13 +80,10 @@ Para fazê-los crescer automaticamente, use
 ## texto
 
 Use `\text` ...
-\text{Area 1}
+\text{Área 1}
 
 !bad ... para evitar o seguinte
 Area 1
-
-Isso pode ser útil para ordinais
-n-\text{ésimo}
 
 ## Espaçamento
 
@@ -134,7 +131,7 @@ x \ge 3
 x \not\gt 4
 
 [math]T[/math] é proporcional a [math]p[/math]
-T \propto p \text{ or } T \sim p
+T \propto p \text{ ou } T \sim p
 
 ## Alinhamento dos sinais de igualdade
 
@@ -154,7 +151,7 @@ Você também pode legendar uma linha
 Para dar mais explicações, coloque um texto
 \begin{align}
     2 + 2 &= 4                             \tag 1 \\
-    2     &= 4 - 2 && \text{subtracting 2}        \\
+    2     &= 4 - 2 && \text{subtraindo 2}        \\
     2     &= 2                             \tag a
 \end{align}
 
@@ -172,17 +169,17 @@ S = \left\{
 2 \overset{?}{=} 3
 
 !bad Setas às vezes ficam muito curtas
-\overset{\text{some text}}{\rightarrow}
+\overset{\text{algum texto}}{\rightarrow}
 
 Use `\xrightarrow` no lugar
-\xrightarrow{\text{some text}}
+\xrightarrow{\text{algum texto}}
 
 Sobrechaves e subchaves em ação
 (\cos x + \sin x)^2 =
     \underbrace{\cos^2 x + \sin^2 x}_{1} +
     \overbrace{2 \sin x \cos x}^{\sin 2x}
 
-## Modulo
+## Módulo
 
 Se [math]\text{mod}[/math] é usado como operador binário
 7 \bmod 4 = 3
@@ -204,7 +201,7 @@ Use `\angle` para denotar um ângulo
 \hat A = \widehat{BAC} = 90^\circ
 
 Para radianos, o seguinte funciona
-\angle A = \frac{\pi}{2} \text{ radians}
+\angle A = \frac{\pi}{2} \text{ rad}
 
 ## Letras gregas
 
@@ -273,8 +270,8 @@ Outra maneira de definir uma função
 
 Funções por partes
 f(x) = \begin{cases}
-    x   & \text{if $x \gt 0$}\\
-    x^2 & \text{else}
+    x   & \text{se $x \gt 0$}\\
+    x^2 & \text{senão}
 \end{cases}
 
 ## Operações com funções
@@ -333,7 +330,7 @@ Infinito cardinal
 |\R| = \mathfrak c
 
 Infinito ordinal
-\omega^\omega = \text{big}
+\omega^\omega = \text{grande}
 
 Infinito complexo
 \tilde\infty
@@ -562,7 +559,7 @@ A matriz adjunta
 \operatorname{adj} A
 
 Transpondo uma matriz
-A^\top \text{ or } A^\intercal
+A^\top \text{ ou } A^\intercal
 
 O determinante
 \det A = \begin{vmatrix}
