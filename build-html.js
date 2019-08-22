@@ -8,7 +8,7 @@ function titleCase(string) {
 function headerCase(string) {
     return string
         .split(' ')
-        .map(x => ['and', 'of', 'with'].includes(x) ? x : titleCase(x))
+        .map(x => ['e', 'ou', 'com'].includes(x) ? x : titleCase(x))
         .join(' ');
 }
 
@@ -18,7 +18,7 @@ function anchor(string) {
 
 const lines = contents.split(/\n\n+/).map(line => line.trim());
 
-let tableOfContents = `<a data-scroll href='#introduction'>Introduction</a>`;
+let tableOfContents = `<a data-scroll href='#introduction'>Introdução</a>`;
 
 let examplesHaveStarted = false;
 let sectionHasStarted = false;
