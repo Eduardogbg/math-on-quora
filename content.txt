@@ -301,7 +301,7 @@ Formatar somas é fácil
 Produtórios podem ser formatados de maneira similar
 \displaystyle \prod_{n=1}^\infty x^n
 
-## Continuation dots
+## Reticências
 
 !bad Nunca use `...` para fazer reticências
 1 + 2 - 3 + 4 ...
