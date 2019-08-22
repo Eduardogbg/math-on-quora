@@ -373,7 +373,7 @@ Você também pode usar essas abreviações
 `\mid` insere uma barra vertical
 \{n^2 \mid n \in \N\}
 
-## Copo e chapéu
+## União e interseção
 
 União e interseção
 A \cup B = C \cap D
