@@ -1,164 +1,164 @@
-# Arithmetic
+# Aritimética
 
-## Basic Operators
+## Operadores básicos
 
-Basic operators work as expected
+Operadores básicos funcionam como esperado
 1 + 2 - 3 = 0
 
-Division can be done as follows
+Divisão pode ser feita como a seguir
 1/2 = 1 \div 2 = \frac{1}{2}
 
-To typeset bigger fractions, use
+Para formatar frações maiores, use
 \dfrac{1}{2}
 
-Or use `\displaystyle`.
+Ou use `\displaystyle`.
 \displaystyle \frac{1}{3}
 
-Multiplication
+Multiplicação
 2 \cdot 3 = 2 \times 3
 
-!bad Avoid using `*` for multiplication
+!bad Evite usar `*` para multiplicação
 2 * 3
 
 
-Repeated decimals can be denoted by a bar
+Decimais repetentes podem ser denotados por uma barra
 \frac{1}{7} = 0.\overline{142857}
 
-## Exponents and Indexes
+## Expoentes e índices
 
-Exponents can by typeset with a caret
+Expoentes podem ser formatados com um acento circunflexo
 2^3 = 8
 
-use braces to group exponents ...
+use chaves para agrupá-los ...
 2^{10}
 
-!bad ... to avoid
+!bad ... para evitar
 2^10
 
-Subscripts, like indices, can by typeset as follows
+Subescritos, como índices, podem ser formatados como a seguir
 a_n = 2 \cdot a_{n-1}
 
-## Square roots
+## Radicais
 
-A square root can be typeset with
+Uma raiz quadrada pode ser formatada como
 \sqrt{16} = 4
 
-To take the [math]n^\text{th}[/math] root, use
+Para tirar a raiz [math]n-\text{ésima}[/math], use
 \sqrt[3]{27} = 3
 
-`\pm` becomes a plus-minus.
+`\pm` vira "mais-ou-menos".
 x^2 = 4 \implies x = \pm \sqrt{4}
 
-Braces can be omitted if the argument is only 1 symbol
+Chaves podem ser omitidas se o argumento é apenas 1 símbolo
 \sqrt 2
 
-## Delimiters
+## Delimitadores
 
-For large parentheses, use `\left` and `\right` ...
+Para parênteses grandes, use `\left` e `\right` ...
 \left( \dfrac{1}{x} \right)
 
-!bad ... to avoid the following
+!bad ... para evitar o seguinte
 (\dfrac{1}{x})
 
-This can also be used with `|`, `[`, ...
+Isso também pode ser feito com `|`, `[`, ...
 \left| \frac{x + 1}{x - 1} \right|
 
-Floor can be obtained with `\lfloor` and `\rfloor`
+Piso pode ser obtido com `\lfloor` e `\rfloor`
 \left\lfloor \frac{1}{2} \right\rfloor
 
-`\|` becomes a double bar
+`\|` vira uma barra dupla
 \left\| \frac{z}{a} \right\|
 
-Angle brackets can be typeset as follows
+Colchetes angulares podem ser formatados como a seguir
 \langle x^2 + 1 \rangle
 
-To make them automatically grow, use
+Para fazê-los crescer automaticamente, use
 \left< \dfrac{1}{2} \right>
 
-# Text and spacing
+# Texto e espaçamento
 
-## text
+## texto
 
 Use `\text` ...
 \text{Area 1}
 
-!bad ... to avoid the following
+!bad ... para evitar o seguinte
 Area 1
 
-This can be useful for ordinals
-5^\text{th}
+Isso pode ser útil para ordinais
+n-\text{ésimo}
 
-## Spacing
+## Espaçamento
 
-`\&nbsp;` adds a space with the width of a space
+`\&nbsp;` adiciona um espaço com o comprimento padrão
 \blacksquare \ \blacksquare
 
-`\quad` and `\qquad` are bigger spaces
+`\quad` e `\qquad` são espaços maiores
 \blacksquare \quad
 \blacksquare \qquad
 \blacksquare
 
-`\:` and `\,` are small spaces
+`\:` são `\,` espaços menores
 \blacksquare \:
 \blacksquare \,
 \blacksquare
 
-Small spaces are useful to group digits
+Espaços pequenos são úteis para agrupar dígitos
 54\,321
 
 
-# Equalities
+# Igualdades
 
-(In)equalities
+(Des)igualdades
 1 + 1 = 2 \ne 3 \approx \pi
 
-Adding a tag will add a number and center your equation
+Uma legenda vai adicionar numerar e centralizar sua equação
 A = b \cdot h \tag 1
 
-Using `tag*` will remove the parentheses
+Usar `tag*` vai remover os parênteses
 A = b \cdot h \tag* 2
 
-To center an equation without a tag, the following works
+Para centralizar uma equação sem uma legenda, o seguinte funcionará
 A = b \cdot h \tag*{}
 
-`\lt` stands for less than
+`\lt` representa "menor que"
 3 \lt x \le 4
 
-`\gt` stands for greater than
+`\gt` representa "maior que"
 x \gt 3
 
-`\ge` stands for greater than or equal to
+`\ge` representa "maior ou igual a"
 x \ge 3
 
-`\not` can be used to negate anything, but is often ugly
+`\not` pode ser usado para negar qualquer coisa, mas é geralmente feio
 x \not\gt 4
 
-[math]T[/math] is proportional to [math]p[/math]
+[math]T[/math] é proporcional a [math]p[/math]
 T \propto p \text{ or } T \sim p
 
-## Alignment of equal signs
+## Alinhamento dos sinais de igualdade
 
-Align equal signs as follows
+Alinhe os sinais de igualdade como a seguir
 \begin{align}
     2 + 2 &= 4 \\
     2     &= 4 - 2
 \end{align}
 
-You can also give a tag to a line
+Você também pode legendar uma linha
 \begin{align}
     2 + 2 &= 4     \tag 1 \\
     2     &= 4 - 2        \\
     2     &= 2     \tag a
 \end{align}
 
-To give some more explanation, add some text
+Para dar mais explicações, coloque um texto
 \begin{align}
     2 + 2 &= 4                             \tag 1 \\
     2     &= 4 - 2 && \text{subtracting 2}        \\
     2     &= 2                             \tag a
 \end{align}
 
-System of equations
+Sistemas de equações
 S = \left\{
 \begin{aligned}
     a + b     &= 4\\
@@ -166,151 +166,156 @@ S = \left\{
 \end{aligned}
 \right.
 
-## Annotating equalities
+## Anotando igualdades
 
-Overset can be used to stack symbols
+\overset pode ser usado pra empilhar símbolos
 2 \overset{?}{=} 3
 
-!bad Arrows are sometimes too short
+!bad Setas às vezes ficam muito curtas
 \overset{\text{some text}}{\rightarrow}
 
-Use `\xrightarrow` instead
+Use `\xrightarrow` no lugar
 \xrightarrow{\text{some text}}
 
-Underbrace and overbrace in action
+Sobrechaves e subchaves em ação
 (\cos x + \sin x)^2 =
     \underbrace{\cos^2 x + \sin^2 x}_{1} +
     \overbrace{2 \sin x \cos x}^{\sin 2x}
 
 ## Modulo
 
-If [math]\text{mod}[/math] is used as a binary operator
+Se [math]\text{mod}[/math] é usado como operador binário
 7 \bmod 4 = 3
 
-If it's used after an equation
+Se é usado depois da equação
 7 \equiv 3 \pmod 4
 
-Without parentheses
+Sem parênteses
 7 \equiv 3 \mod 4
 
-# Geometry
+# Geometria
 
-## Angles
+## Ângulos
 
-Use `\angle` to denote an angle
+Use `\angle` para denotar um ângulo
 \angle A = 90^\circ
 
-`\hat` and `\widehat` are another possibility
+`\hat` e `\widehat` são outras possibilidades
 \hat A = \widehat{BAC} = 90^\circ
 
-For radians, the following works
+Para radianos, o seguinte funciona
 \angle A = \frac{\pi}{2} \text{ radians}
 
-## Greek letters
+## Letras gregas
 
-Some Greek letters
+Algumas letras gregas
 \alpha \beta \gamma \delta
 
-Greek uppercase letters
+Letras gregas maiúsculas
 \Gamma \Delta \Theta \Xi \Lambda
 
-Phi and epsilon have variants
+Fi e épsilon têm variantes
 \phi, \varphi \quad \epsilon, \varepsilon
 
-Likewise for theta, kappa ...
+Assim como teta e capa ...
 \theta, \vartheta \quad \kappa, \varkappa
 
-... pi and rho
+... pi e rô
 \pi, \varpi \quad \rho, \varrho
 
 
-## Other symbols
+## Outros símbolos
 
-Useful shapes
+Formas úteis
 \triangle, \square, \bigcirc
 
 Perpendicular
 AB \perp BC
 
-Parallel
+Paralelo
 AB \parallel CD
 
-Similarity
+Similaridade
 \triangle ABC \sim \triangle CEF
 
-Congruence
+Congruência
 \triangle ABC \cong \triangle CEF
 
-# Functions
+# Funções
 
-## Standard functions
+## Funções padrão
 
-Write standard functions with a backslash
+Escreva funções padrão com uma barra invertida
 \log x
 
-!bad Not doing so gives bad results
+!bad Não fazer isso dá resultados ruins
 log x
 
-Lots of functions are available ...
-\exp x, \sin x, \arccos x, \cosh x, \max x
+Muitas funções estão disponíveis ...
+\exp x, \arccos x, \cosh x, \max x
 
+N.T: seno está disponível como no inglês [math]\sin[/math]
+\sin x
 
-## Introducing functions
+## Introduzindo funções
 
-Some functions aren't available. <br> Use `operatorname`
+Algumas funções não estão disponíveis. <br> Use `operatorname`
 \operatorname{arccosh} x
 
-Another way of defining a function
+N.T: Com isso podemos também definir o seno em português!
+\operatorname{sen} x
+
+Outra maneira de definir uma função
 \begin{align}
     f\colon \R &\to \R^+\\
     x          &\mapsto x^2
 \end{align}
 
-Piecewise functions
+Funções por partes
 f(x) = \begin{cases}
     x   & \text{if $x \gt 0$}\\
     x^2 & \text{else}
 \end{cases}
 
-## Operations with functions
+## Operações com funções
 
-Derivative
+Derivada
 f'(x) = \frac{df}{dx}
 
-Composition
+Composição
 (f \circ g)(x) = f(g(x))
 
-Inverse
+Inversa
 f^{-1}(x)
 
-# Sums and Series
+# Somas e Séries
 
-## Summation and products
+## Somatórios e produtórios
 
-Typesetting sums is easy
+Formatar somas é fácil
 \sum_{n=1}^\infty x^n
 
-`\displaystyle` makes it breathe some more
+`\displaystyle` faz ela respirar um pouco mais
 \displaystyle \sum_{n=1}^\infty x^n
 
-`\limits` maintains the small style, but shifts<br>the limits to the bottom of the sum
+`\limits` mantém o estilo pequeno, mas leva<br>os limites para em cima e em baixo da soma
 \sum\limits_{n=1}^\infty x^n
 
-Products can be typeset in a similar fashion
+Produtórios podem ser formatados de maneira similar
 \displaystyle \prod_{n=1}^\infty x^n
 
 ## Continuation dots
 
-!bad Never use `...` to make dots
+!bad Nunca use `...` para fazer reticências
 1 + 2 - 3 + 4 ...
 
-`\ldots` gives low dots
+`\ldots` dá reticências inferiores
 1, 2, \ldots, 10
 
-`\cdots` gives centered dots
+`\cdots` dá reticências centralizadas
 f(x) = x + x^2 + x^3 + \cdots
 
-Vertical and diagonal dots are useful in matrices
+Reticências diagonais e verticais são úteis em matrizes
 \begin{pmatrix}
     1 & 1 & \cdots & 1 \\
     0 & 1 & \cdots & 1 \\
@@ -318,254 +323,254 @@ Vertical and diagonal dots are useful in matrices
     0 & 0 & 0      & 1
 \end{pmatrix}
 
-# Infinity
+# Infinito
 
-The inf(ini)ty symbol
+O símbolo do infinito
 \infty
 
-Cardinal infinity
+Infinito cardinal
 |\N| = \aleph_0,
 |\R| = \mathfrak c
 
-Ordinal infinity
+Infinito ordinal
 \omega^\omega = \text{big}
 
-Complex infinity
+Infinito complexo
 \tilde\infty
 
 
 
-# Logic
+# Lógica
 
-Logical or, logical and
+"ou" lógico, "e" lógico
 a \lor b \land c
 
-Negation
+Negação
 \bar{c} \equiv \lnot c
 
-True and false
+Verdadeiro e falso
 \top \land \bot \equiv \bot
 
-Implications
+Implicações
 (a \implies b) \iff (b \impliedby a)
 
-Quantifiers
+Quantificadores
 \forall A, \exists B : A \lt B
 
-# Sets
+# Conjuntos
 
-## Braces
+## Chaves
 
-!bad `{}` don't work, as they group objects
+!bad `{}` não funcionam, porque agrupam objetos
 {1, 2, 3}
 
-Escape them with a backslash
+Escape elas com barras invertidas
 \{1, 2, 3\}
 
-Use `\mathbb` to get double stroked letters
+Use `\mathbb` para conseguir letras duplicadas
 \mathbb{N} = \{0, 1, 2, 3, \ldots \}
 
-You can also use the following shorthands
+Você também pode usar essas abreviações
 \O, \N, \Z, \Q, \R, \C
 
-`\mid` inserts a vertical bar
+`\mid` insere uma barra vertical
 \{n^2 \mid n \in \N\}
 
-## Cup and Cap
+## Copo e chapéu
 
-Unify and intersect
+União e interseção
 A \cup B = C \cap D
 
-Element of a set
+Elemento num conjunto
 x \in A
 
-Superset and subset are self-explanatory
+Superconjunto e subconjuntos
 A \subset B \iff B \supset A
 
-Add `eq` to get
+Adicione `eq` para 
 A \subseteq B
 
-To subtract a set, write
+Para subtrair um conjunto, escreva
 \N_0 = \N \setminus \{0\}
 
-## Others
+## Outros
 
-Empty set
+Conjunto vazio
 \emptyset = \varnothing
 
-Powerset
+Conjunto potência
 \mathcal P \{1, 2\} = \{\{\}, \{1\}, \{2\}, \{1,2\} \}
 
-# Combinatorics
+# Combinatória
 
-Factorial
+Fatorial
 4! = 4 \cdot 3 \cdot 2 \cdot 1
 
-Binomial notation
+Notação binomial
 {n \choose r} = \binom{n}{r} = \frac{n!}{(n-r)!r!}
 
-Other ways
+Outras maneiras
 {}^n\text{C}_r = {}_n\text{C}_r = \text{C}_r^n
 
-# Complex numbers
+# Números complexos
 
-The complex set
+O conjunto complexo
 a + ib \in \C
 
-The real part
+A parte real
 \Re \left( e^{ix} \right) = \cos x
 
-The imaginary part
+A parte imaginária
 \Im \left( e^{ix} \right) = \sin x
 
-The conjugate of  a number
+O conjugado de um número
 \overline z = \Re (z) - i \Im (z)
 
-The magnitude
+A magnitetude
 |z| = \| z \|
 
-The argument
+O argumento
 \arg z
 
 
 
-# Calculus
+# Cálculo
 
-## Limits
+## Limites
 
-Limits can be typeset with a subscript
+Limites podem ser formatados com um subescrito
 \lim_{x \to \infty} x^2 = \infty
 
-Displaystyle makes it breathe more
+Displaystyle faz ele respirar mais
 \displaystyle\lim_{x \to \infty} x^2 = \infty
 
-## Derivatives
+## Derivadas
 
-Typeset derivatives using fractions
+Formatar derivadas usando frações
 \dfrac{dy}{dx}
 
-If you want [math]\mathrm d[/math] to be upright, use
+Se você quer o [math]\mathrm d[/math] mais reto, use
 \dfrac{\mathrm dy}{\mathrm dx}
 
-Derivative at a point
+Derivada num ponto
 \left. \dfrac{dy}{dx} \right|_{x=0}
 
-Partial derivatives
+Derivada parcial
 \dfrac{\partial f(x,y)}{\partial x} = f_x
 
-Difference quotients
+Quociente de diferença
 \dfrac{\Delta y}{\Delta x}
 
-Derivates w.r.t. time
+Derivadas com respeito ao tempo
 \dot x, \ddot x
 
-You can add this once ...
+Você pode declar isso uma vez ...
 \newcommand\deriv[2]{\frac{\mathrm d #1}{\mathrm d #2}}
 \deriv{f}{x}
 
-... to shorten repeated use
+... para encurtar o uso repetido
 \deriv{y}{x}
 
 
-## Integrals
+## Integrais
 
-Here, `\,` adds a small space
+Aqui, `\,` adiciona um pequeno espaço
 \int x \, dx = \frac{x^2}{2}
 
-For an upright [math]\mathrm d[/math], use
+Para um [math]\mathrm d[/math] mais reto, use
 \int x \, \mathrm dx = \frac{x^2}{2}
 
-!bad Never use consecutive `\int`s
+!bad Nunca use `\int`s consecutivas
 \int \int x^2 + y^2 \,dx \,dy
 
-Use `\iint` instead
+Use `\iint` ao invés
 \iint x^2 + y^2 \,dx \, dy
 
-Lower and upper bounds
+Limites inferiores e superiores
 \int_a^b x \, dx
 
-Displaystyle makes it breathe more
+Displaystyle faz ela respirar mais
 \displaystyle\int_a^b x \, dx
 
-Evaluating integrals. `\left.` is an invisible bracket
+Avaliando integrais. `\left.` é um colchete invisível
 \displaystyle
 \int_0^1 x \, dx = \left. \frac{x^2}{2} \right|_0^1
 
-Closed path integral
+Integral de caminho fechado
 \displaystyle
 \oint_C \mathbf F \cdot d \mathbf r
 
-`\limits` places the boundaries under the integral sign
+`\limits` coloca as bordas no sinal de integral
 \displaystyle\oint\limits_C \mathbf F \cdot d \mathbf r
 
-# Vectors
+# Vetores
 
-Choose one of the following
+Escolha um desses
 \mathbf{u} = \vec u
 
 
-Use `\imath` and `\jmath` for unit vectors ...
+Use `\imath` e `\jmath` para vetores unitários ...
 \hat \imath, \hat \jmath, \hat k
 
-!bad ... to avoid
+!bad ... para evitar
 \hat i, \hat j, \hat k
 
 
-Take the cross product with `\times`
+Tome o produto vetorial com `\times`
 \vec u \times \vec v
 
-Take the dot product with `\cdot`
+Tome o produto interno com `\cdot`
 \vec u \cdot \vec v
 
-Angle brackets can be used
+Colchetes angulares podem ser usados
 \vec u = \left< u_x, u_y, u_z \right>
 
-The nabla operator
+O operador nabla
 \nabla f = \operatorname{grad} f
 
-Divergence of a vector field
+Divergente de um campo vetorial
 \nabla \cdot \mathbf F
  = \operatorname{div} \mathbf F
 
-For repeated use, add this once ...
+Para uso repetido use ...
 \DeclareMathOperator{\div}{div}
 \div \mathbf F
 
-... and use it as many times as you want.
+... e use quantas vezes quiser.
 \div \mathbf A = \div \mathbf B
 
-Curl of a vector field
+Rotacional de um campo vetorial
 \nabla \times \mathbf F
  = \operatorname{curl} \mathbf F
 
 
-# Matrices
+# Matrizes
 
-Make a matrix with parentheses
+Faça matrizes com parênteses
 \begin{pmatrix}
     0 & 1\\
     1 & 1
 \end{pmatrix}
 
-Make a matrix with brackets
+Faça uma matriz com colchetes
 \begin{bmatrix}
     0 & 1\\
     1 & 1
 \end{bmatrix}
 
-The adjugate matrix
+A matriz adjunta
 \operatorname{adj} A
 
-Transposing a matrix
+Transpondo uma matriz
 A^\top \text{ or } A^\intercal
 
-The determinant
+O determinante
 \det A = \begin{vmatrix}
     0 & 1\\
     1 & 1
 \end{vmatrix} = -1
 
-Add some centered, vertical and diagonal dots
+Adicione reticências centralizadas, verticais e diagonais
 \begin{bmatrix}
     1      & 0      & \cdots & 0     \\
     0      & 1      & \cdots & 0     \\
