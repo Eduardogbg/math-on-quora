@@ -446,7 +446,7 @@ Displaystyle faz ele respirar mais
 Formatar derivadas usando frações
 \dfrac{dy}{dx}
 
-Se você quer o [math]\mathrm d[/math] mais reto, use
+Se você quer o [math]\mathrm d[/math] reto, use
 \dfrac{\mathrm dy}{\mathrm dx}
 
 Derivada num ponto
@@ -474,7 +474,7 @@ Você pode declar isso uma vez ...
 Aqui, `\,` adiciona um pequeno espaço
 \int x \, dx = \frac{x^2}{2}
 
-Para um [math]\mathrm d[/math] mais reto, use
+Para um [math]\mathrm d[/math] reto, use
 \int x \, \mathrm dx = \frac{x^2}{2}
 
 !bad Nunca use `\int`s consecutivas
