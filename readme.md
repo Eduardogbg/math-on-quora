@@ -1,3 +1,5 @@
-# A short guide to using LaTeX on Quora
+# Um guia curto sobre usar LaTeX no Quora (tradução)
 
-Seeing a lot of people struggling with typesetting math on Quora, I decided to write a short guide to help: [https://math-on-quora.surge.sh](math-on-quora.surge.sh).
+Visto que mesmo pelo Quora-PT [https://math-on-quora.surge.sh](o guia original em inglês), por [https://www.quora.com/profile/Gilles-Castel-1](Gilles Castel), era usado como principal - mesmo que não-oficial - refêrencia para formatação matemática, decidi traduzí-lo. 
+
+Mesmo sendo o site estando em português, a cultura da comunidade ainda está sutilmente ligada à versão em inglês, o que cria uma barreira de adoção. Como usuários, devemos ser conscientes disso e prezar pela nossa comunidade.

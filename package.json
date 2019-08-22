@@ -1,7 +1,7 @@
 {
   "name": "quora-math-guide",
   "version": "1.0.0",
-  "description": "Short MathJax guide for Quora",
+  "description": "Guia curto em MathJax para Quora",
   "scripts": {
     "build": "npm run build:html && npm run build:js && npm run build:css",
     "build:html": "node ./build-html.js",
@@ -11,7 +11,7 @@
     "dev": "npm run watch",
     "prod": "npm run build && rm -f ./dist/*.map && uglifyjs --compress -o ./dist/bundle.js -- ./dist/bundle.js && cd ./dist && surge"
   },
-  "author": "Gilles Castel",
+  "author": "Eduardogbg",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
