@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <link rel="alternate" href="https://math-on-quora.surge.sh" hreflang="en" />
-        <meta charset="UTF-8">
-        <title>An introduction to beautiful math on Quora</title>
+        <meta charset="UTF-8">        <link rel="alternate" href="https://math-on-quora.surge.sh" hreflang="pt-br" />
+
+        <title>Uma introdução à matemática bonita no Quora</title>
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -18,67 +19,71 @@
         <meta name="msapplication-config" content="./icons/browserconfig.xml">
         <meta name="theme-color" content="#b92b27">
 
-        <meta property="og:title" content="An introduction to beautiful math on Quora" />
-        <meta name="twitter:site" content="@gilles_castel">
+        <meta property="og:title" content="Uma introdução à matemática bonita no Quora" />
+        <meta name="twitter:site" content="@eduardogbg">
         <meta name="twitter:domain" content="surge.sh">
-        <meta name="twitter:creator" content="@gilles_castel">
+        <meta name="twitter:creator" content="@eduardogbg">
+        <meta name="reply-to" content="eduardogbg@gmail.com">
         <meta property="og:site_name" content="math-on-quora.surge.sh" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="A short introduction to beautiful math typesetting on Quora" />
-        <meta name="description" content="A short introduction to beautiful math typesetting on Quora" />
-        <meta name="author" content="Gilles Castel" />
-        <meta name="keywords" content="math on quora, quora, math, maths, mathematics, typesetting, mathematical notations in latex, latex, tutorial" />
+        <meta property="og:description" content="Uma curta introdução à formatação matemática bonita no Quora" />
+        <meta name="description" content="Uma curta introdução à formatação matemática bonita no Quora" />
+        <meta name="author" content="Eduardo Gomes" />
+        <meta name="keywords" content="matemática no quora, quora, matemática, formatação, notação matemática em latex, latex, tutorial" />
+        <meta http-equiv="content-language" content="pt-br">
     </head>
     <body>
-        <header>Beautiful math on <img src="./images/quora.svg" alt="Quora">
-            <div class="subtitle">[math]\LaTeX[/math] in less than 10 minutes</div>
+        <header>Matemática bonita no <img src="./images/quora.svg" alt="Quora">
+            <div class="subtitle">[math]\LaTeX[/math] em menos de 10 minutos</div>
         </header>
         <div id="toc">
             {{toc}}
         </div>
         <div id="toc-toggle">☰</div>
         <section id="introduction">
-            <h1>Introduction</h1>
+            <h1>introdução</h1>
             <div class="figure-set">
                 <figure>
-                    <figcaption>To enter math mode, click on show more &hellip;</figcaption>
-                    <img src="./images/show-more.png" alt="Click on the three dots in the edit bar">
+                    <figcaption>Para entrar no modo matemática, clique em mostrar mais &hellip;</figcaption>
+                    <img src="./images/show-more.png" alt="Clique nas reticências na barra de Edição">
                 </figure>
 
                 <figure>
-                    <figcaption>&hellip; then click on the sigma button</figcaption>
-                    <img src="./images/button.png" alt="Click on the Sigma button">
+                    <figcaption>&hellip; então clique no botão Sigma</figcaption>
+                    <img src="./images/button.png" alt="Clique no botão Sigma">
                 </figure>
                 <figure>
-                    <figcaption>Press Σ again to end math mode</figcaption>
+                    <figcaption>Pressione Σ de novo para encerrar o modo matemática</figcaption>
                     <img src="./images/highlight.png" alt="Closing math mode">
                 </figure>
                 <figure>
-                    <figcaption>Keyboard shortcuts are often easier to use</figcaption>
-                    <img src="./images/keyboard.png" alt="Cmd + Shift + L or Ctrl + Shift + L">
+                    <figcaption>Atalhos geralmente são mais fáceis de usar</figcaption>
+                    <img src="./images/keyboard.png" alt="Cmd + Shift + L ou Ctrl + Shift + L">
                 </figure>
                 <figure>
-                    <figcaption>For question titles, you can use <code>[math]</code> and <code>[/math]</code></figcaption>
-                    <img src="./images/tags.png" alt="Surround your math with `[math]` and `[/math]` (without the quotes)">
+                    <figcaption>Para títulos de perguntas, pode-se usar <code>[math]</code> e <code>[/math]</code></figcaption>
+                    <img src="./images/tags.png" alt="Cerque seu código com `[math]` and `[/math]` (sem as aspas)">
                 </figure>
                 <figure>
-                    <figcaption>Click on &lsquo;Suggest Edits&rsquo; to see others&rsquo; [math]\LaTeX[/math] code</figcaption>
+                    <figcaption>Clique em &lsquo;Sugerir Edição&rsquo; para ver o &rsquo; [math]\LaTeX[/math] dos outros</figcaption>
                     <img src="./images/suggest-edits.png" alt="Click on the three dots on the right of an answer, then click on suggest edits">
                 </figure>
                 <figure>
-                    <figcaption><a title="Open deTeXify in a new tab" target="_blank" rel="noopener" href="http://detexify.kirelabs.org/classify.html">De[math]\TeX[/math]ify</a> helps you with finding the name of a symbol</figcaption>
-                    <img src="./images/detexify.png" alt="Draw the symbol you want, and DeTeXify find the name for you">
+                    <figcaption><a title="Abra deTeXify em uma nova aba" target="_blank" rel="noopener" href="http://detexify.kirelabs.org/classify.html">De[math]\TeX[/math]ify</a> te ajuda a encontrar o nome de um símbolo</figcaption>
+                    <img src="./images/detexify.png" alt="Desenhe o símbolo que você quiser, e o DeTeXify acha o nome pra você">
                 </figure>
                 <figure>
-                    <figcaption>Code editors like <a title="Open TeXpaste in a new tab" target="_blank" rel="noopener" href="http://www.texpaste.com/">[math]\TeX[/math]paste</a> can speed up your work</figcaption>
-                    <img src="./images/TeXpaste.png" alt="Code editors come with buttons that will insert special characters">
+                    <figcaption>Editores de código como <a title="Open TeXpaste in a new tab" target="_blank" rel="noopener" href="http://www.texpaste.com/">[math]\TeX[/math]paste</a> podem acelear seu trabalho</figcaption>
+                    <img src="./images/TeXpaste.png" alt="Editores de código vem com botões que inserem caractéres especiais">
                 </figure>
             </div>
         </section>
         {{content}}
         <footer>
-            <span>Made with <span class="love">❤</span> by <a href="https://www.quora.com/profile/Gilles-Castel-1">Gilles</a></span>
-            <span>Thanks to&#32;
+            <span>Feito com <span class="love">❤</span> por <a href="https://www.quora.com/profile/Gilles-Castel-1">Gilles</a></span>
+            <span>Traduzido por <a href="https://pt.quora.com/profile/Eduardo-Gomes-16">Eduardo Gomes</a></span>
+            <span>Obra original disponível em <a href="https://math-on-quora.surge.sh">math-on-quora</a></span>
+            <span>Agradecimentos a&#32;
                 <a href="https://www.quora.com/profile/Job-Bouwman">Job&nbsp;Bouwman</a>,&#32;
                 <a href="https://www.quora.com/profile/Mike-Wilkes">Mike Wilkes</a>,&#32;
                 <a href="https://www.quora.com/profile/Alan-Bustany">Alan Bustany</a>,&#32;
@@ -93,7 +98,7 @@
                 and <a href="https://www.quora.com/profile/Jan-van-Delden-2">Jan van Delden</a>
             </span>
             <br>
-            <span>Suggestions, errors, questions?</span><span><a href="https://www.quora.com/profile/Gilles-Castel-1">Send me a message!</a> or <a href="https://github.com/gillescastel/math-on-quora">open an issue on Github<a></span>
+            <span>Sugestões, erros, perguntas?</span><span><a href="https://pt.quora.com/profile/Eduardo-Gomes-16">Me mande uma mensagem!</a> ou <a href="https://github.com/eduardogbg/math-on-quora">abra uma <span lang="en">issue</span> no Github<a></span>
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>
