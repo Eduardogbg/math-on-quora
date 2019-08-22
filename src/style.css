@@ -141,7 +141,7 @@ html, body {
             }
 
             pre.first::after {
-                content: 'Edit me!';
+                content: 'Me edite!';
                 position: absolute;
                 top: 0;
                 right: 0;
