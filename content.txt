@@ -5,7 +5,7 @@
 Operadores básicos funcionam como esperado
 1 + 2 - 3 = 0
 
-Divisão pode ser feita como a seguir
+Divisão pode ser feita como abaixo
 1/2 = 1 \div 2 = \frac{1}{2}
 
 Para formatar frações maiores, use
@@ -21,12 +21,12 @@ Multiplicação
 2 * 3
 
 
-Decimais repetentes podem ser denotados por uma barra
+Dízimas periódicas são denotadas por uma barra
 \frac{1}{7} = 0.\overline{142857}
 
 ## Expoentes e índices
 
-Expoentes podem ser formatados com um acento circunflexo
+Expoentes são formatados com um acento circunflexo
 2^3 = 8
 
 use chaves para agrupá-los ...
@@ -35,12 +35,12 @@ use chaves para agrupá-los ...
 !bad ... para evitar
 2^10
 
-Subescritos, como índices, podem ser formatados como a seguir
+Índices subscritos são formatados como demonstrado
 a_n = 2 \cdot a_{n-1}
 
 ## Radicais
 
-Uma raiz quadrada pode ser formatada como
+Uma raiz quadrada é formatada como
 \sqrt{16} = 4
 
 Para tirar a raiz [math]n[/math]-ésima, use
@@ -69,7 +69,7 @@ Piso pode ser obtido com `\lfloor` e `\rfloor`
 `\|` vira uma barra dupla
 \left\| \frac{z}{a} \right\|
 
-Colchetes angulares podem ser formatados como a seguir
+Colchetes angulares são formatados como abaixo
 \langle x^2 + 1 \rangle
 
 Para fazê-los crescer automaticamente, use
@@ -83,7 +83,7 @@ Use `\text` ...
 \text{Área 1}
 
 !bad ... para evitar o seguinte
-Area 1
+Área 1
 
 ## Espaçamento
 
@@ -109,13 +109,13 @@ Espaços pequenos são úteis para agrupar dígitos
 (Des)igualdades
 1 + 1 = 2 \ne 3 \approx \pi
 
-Uma legenda vai adicionar numerar e centralizar sua equação
+Uma legenda vai numerar e centralizar sua equação
 A = b \cdot h \tag 1
 
 Usar `tag*` vai remover os parênteses
 A = b \cdot h \tag* 2
 
-Para centralizar uma equação sem uma legenda, o seguinte funcionará
+Para centralizar uma equação sem legenda, <br> faça o seguinte
 A = b \cdot h \tag*{}
 
 `\lt` representa "menor que"
@@ -127,7 +127,7 @@ x \gt 3
 `\ge` representa "maior ou igual a"
 x \ge 3
 
-`\not` pode ser usado para negar qualquer coisa, mas é geralmente feio
+`\not` pode ser usado para negar <br> qualquer coisa, mas é geralmente feio
 x \not\gt 4
 
 [math]T[/math] é proporcional a [math]p[/math]
@@ -135,7 +135,7 @@ T \propto p \text{ ou } T \sim p
 
 ## Alinhamento dos sinais de igualdade
 
-Alinhe os sinais de igualdade como a seguir
+Alinhe os sinais de igualdade como abaixo
 \begin{align}
     2 + 2 &= 4 \\
     2     &= 4 - 2
@@ -165,13 +165,13 @@ S = \left\{
 
 ## Anotando igualdades
 
-\overset pode ser usado pra empilhar símbolos
+`\overset` pode ser usado pra empilhar símbolos
 2 \overset{?}{=} 3
 
 !bad Setas às vezes ficam muito curtas
 \overset{\text{algum texto}}{\rightarrow}
 
-Use `\xrightarrow` no lugar
+Em vez disso, use `\xrightarrow`
 \xrightarrow{\text{algum texto}}
 
 Sobrechaves e subchaves em ação
@@ -200,7 +200,7 @@ Use `\angle` para denotar um ângulo
 `\hat` e `\widehat` são outras possibilidades
 \hat A = \widehat{BAC} = 90^\circ
 
-Para radianos, o seguinte funciona
+Para radianos, faça o seguinte
 \angle A = \frac{\pi}{2} \text{ rad}
 
 ## Letras gregas
@@ -226,16 +226,16 @@ Assim como teta e capa ...
 Formas úteis
 \triangle, \square, \bigcirc
 
-Perpendicular
+Perpendiculares
 AB \perp BC
 
-Paralelo
+Paralelas
 AB \parallel CD
 
-Similaridade
+Similares
 \triangle ABC \sim \triangle CEF
 
-Congruência
+Congruentes
 \triangle ABC \cong \triangle CEF
 
 # Funções
@@ -245,7 +245,7 @@ Congruência
 Escreva funções padrão com uma barra invertida
 \log x
 
-!bad Não fazer isso dá resultados ruins
+!bad Caso contrário os resultados serão ruins
 log x
 
 Muitas funções estão disponíveis ...
@@ -256,10 +256,10 @@ N.T: seno está disponível como no inglês [math]\sin[/math]
 
 ## Introduzindo funções
 
-Algumas funções não estão disponíveis. <br> Use `operatorname`
+Algumas funções não estão disponíveis. <br> Use `\operatorname`
 \operatorname{arccosh} x
 
-N.T: Com isso podemos também definir o seno em português!
+N.T: Com isso podemos também definir <br> o seno em português!
 \operatorname{sen} x
 
 Outra maneira de definir uma função
@@ -292,13 +292,13 @@ f^{-1}(x)
 Formatar somas é fácil
 \sum_{n=1}^\infty x^n
 
-`\displaystyle` faz ela respirar um pouco mais
+`\displaystyle` para ajustá-las
 \displaystyle \sum_{n=1}^\infty x^n
 
 `\limits` mantém o estilo pequeno, mas leva<br>os limites para em cima e em baixo da soma
 \sum\limits_{n=1}^\infty x^n
 
-Produtórios podem ser formatados de maneira similar
+Produtórios são formatados similarmente
 \displaystyle \prod_{n=1}^\infty x^n
 
 ## Reticências
@@ -306,13 +306,13 @@ Produtórios podem ser formatados de maneira similar
 !bad Nunca use `...` para fazer reticências
 1 + 2 - 3 + 4 ...
 
-`\ldots` dá reticências inferiores
+`\ldots` gera reticências inferiores
 1, 2, \ldots, 10
 
-`\cdots` dá reticências centralizadas
+`\cdots` gera reticências centralizadas
 f(x) = x + x^2 + x^3 + \cdots
 
-Reticências diagonais e verticais são úteis em matrizes
+Reticências diagonais e verticais <br> são úteis em matrizes
 \begin{pmatrix}
     1 & 1 & \cdots & 1 \\
     0 & 1 & \cdots & 1 \\
@@ -358,13 +358,13 @@ Quantificadores
 
 ## Chaves
 
-!bad `{}` não funcionam, porque agrupam objetos
+!bad `{}` não funcionam, pois agrupam objetos
 {1, 2, 3}
 
 Escape elas com barras invertidas
 \{1, 2, 3\}
 
-Use `\mathbb` para conseguir letras duplicadas
+Use `\mathbb` para letras de traço duplo
 \mathbb{N} = \{0, 1, 2, 3, \ldots \}
 
 Você também pode usar essas abreviações
@@ -384,7 +384,7 @@ x \in A
 Superconjunto e subconjuntos
 A \subset B \iff B \supset A
 
-Adicione `eq` para 
+Adicione `eq` para
 A \subseteq B
 
 Para subtrair um conjunto, escreva
@@ -423,7 +423,7 @@ A parte imaginária
 O conjugado de um número
 \overline z = \Re (z) - i \Im (z)
 
-A magnitetude
+A magnitude
 |z| = \| z \|
 
 O argumento
@@ -435,7 +435,7 @@ O argumento
 
 ## Limites
 
-Limites podem ser formatados com um subescrito
+Limites são formatados com um subscrito
 \lim_{x \to \infty} x^2 = \infty
 
 Displaystyle faz ele respirar mais
@@ -446,7 +446,7 @@ Displaystyle faz ele respirar mais
 Formatar derivadas usando frações
 \dfrac{dy}{dx}
 
-Se você quer o [math]\mathrm d[/math] reto, use
+Se você quiser o [math]\mathrm d[/math] reto, use
 \dfrac{\mathrm dy}{\mathrm dx}
 
 Derivada num ponto
@@ -461,7 +461,7 @@ Quociente de diferença
 Derivadas com respeito ao tempo
 \dot x, \ddot x
 
-Você pode declar isso uma vez ...
+Você pode declarar isso uma vez ...
 \newcommand\deriv[2]{\frac{\mathrm d #1}{\mathrm d #2}}
 \deriv{f}{x}
 
@@ -471,7 +471,7 @@ Você pode declar isso uma vez ...
 
 ## Integrais
 
-Aqui, `\,` adiciona um pequeno espaço
+Aqui, `\,` insere um espaço pequeno
 \int x \, dx = \frac{x^2}{2}
 
 Para um [math]\mathrm d[/math] reto, use
@@ -486,7 +486,7 @@ Use `\iint` ao invés
 Limites inferiores e superiores
 \int_a^b x \, dx
 
-Displaystyle faz ela respirar mais
+`\displaystyle` para ajustá-la
 \displaystyle\int_a^b x \, dx
 
 Avaliando integrais. `\left.` é um colchete invisível
@@ -529,11 +529,11 @@ Divergente de um campo vetorial
 \nabla \cdot \mathbf F
  = \operatorname{div} \mathbf F
 
-Para uso repetido use ...
+Para uso repetido tente ...
 \DeclareMathOperator{\div}{div}
 \div \mathbf F
 
-... e use quantas vezes quiser.
+... e replique quantas vezes quiser.
 \div \mathbf A = \div \mathbf B
 
 Rotacional de um campo vetorial
@@ -549,7 +549,7 @@ Faça matrizes com parênteses
     1 & 1
 \end{pmatrix}
 
-Faça uma matriz com colchetes
+Faça matrizes com colchetes
 \begin{bmatrix}
     0 & 1\\
     1 & 1
